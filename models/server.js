@@ -6,7 +6,7 @@ class Server {
 
     constructor() {
         this.app = express();
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 3000;
         this.usersPath = '/api/users'; // esto es para indicarle a la persona externa vea cuales son las rutas que dispone el servidor
         // Middlewares
         this.middlewares();
